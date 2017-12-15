@@ -1,18 +1,23 @@
 <template>
   <div class="column">
     <div v-for="song in songs" class="card">
-      <div class="card-content">
-        <div>
-          <span><strong>{{ song.title }}</strong></span>
-        </div>
-      </div>
+      <song :data="song" v-on:selected="select"></song>
     </div>
   </div>
 </template>
 
 <script>
+  import Song from './Song'
   export default {
-    props: ['songs']
+    components: {
+      Song
+    },
+    props: ['songs'],
+    methods: {
+      select (song) {
+        this.$emit('selected', song)
+      }
+    }
   }
 </script>
 

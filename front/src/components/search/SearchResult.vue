@@ -5,16 +5,18 @@
     -->
     <section class="section">
       <div class="container">
+        <!--
         <small-search></small-search>
+        -->
         <div class="columns" id="results">
           <artist-column :artists="artists" v-on:selected="selectArtist"></artist-column>
-          <album-column :albums="albums"></album-column>
-          <song-column :songs="songs"></song-column>
+          <album-column :albums="albums" v-on:selected="selectAlbum"></album-column>
+          <song-column :songs="songs" v-on:selected="selectSong"></song-column>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <song-player></song-player>
+    <footer class="footer" v-if="selectedSong != null">
+      <song-player :song="selectedSong"></song-player>
     </footer>
   </div>
 </template>
@@ -45,7 +47,8 @@
       return {
         albums: albumsList,
         artists: artistList,
-        songs: songList
+        songs: songList,
+        selectedSong: null
       }
     },
     created () {
@@ -78,6 +81,13 @@
       },
       selectArtist (artist) {
         this.albums = artist.albums
+        this.songs = []
+      },
+      selectAlbum (songs) {
+        this.songs = songs
+      },
+      selectSong (song) {
+        this.selectedSong = song
       }
     }
   }

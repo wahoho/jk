@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <div class="column is-6 is-offset-3">
         <h1 class="title">
-          何ききたい？
+          何を聞きたい？
         </h1>
         <h2 class="subtitle">
           アルバム・アティスト・曲名を検索してみましょう

@@ -7,9 +7,11 @@
         </div>
       </div>
       <br>
+      <!--
       <div class="container">
         <video-suggestion></video-suggestion>
       </div>
+      -->
     </section>
   </div>
 </template>
@@ -21,16 +23,10 @@
     components: {
       VideoSuggestion
     },
+    props: ['song'],
     computed: {
       url () {
-        return 'https://open.spotify.com/embed?uri=spotify%3Atrack%3A' + this.track + '&theme=white'
-      }
-    },
-    data () {
-      var trackId = '33Q6ldVXuJyQmqs8BmAa0k'
-
-      return {
-        track: trackId
+        return 'https://open.spotify.com/embed?uri=spotify%3Atrack%3A' + this.song.id + '&theme=white'
       }
     }
   }
