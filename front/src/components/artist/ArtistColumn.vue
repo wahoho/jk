@@ -2,17 +2,25 @@
   <div class="column">
     <div v-for="artist in artists" class="card">
       <div class="card-content">
-        <div>
-          <span><strong>{{ artist.name }}</strong></span>
-        </div>
+        <artist :data="artist" v-on:selected="select"></artist>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Artist from './Artist'
+
   export default {
-    props: ['artists']
+    components: {
+      Artist
+    },
+    props: ['artists'],
+    methods: {
+      select (artist) {
+        this.$emit('selected', artist)
+      }
+    }
   }
 </script>
 
