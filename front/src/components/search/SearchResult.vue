@@ -39,11 +39,11 @@
     props: ['keyword'],
     data () {
       var albumsList = [
-        { title: 'Album1', description: 'Description1' },
-        { title: 'Album2', description: 'Description2' },
-        { title: 'Album3', description: 'Description3' },
-        { title: 'Album4', description: 'Description4' },
-        { title: 'Album5', description: 'Description5' }
+        { title: 'Album1', description: 'Description1', cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Koko_ni_Ita_Koto_Album_Cover.jpg' },
+        { title: 'Album2', description: 'Description2', cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Koko_ni_Ita_Koto_Album_Cover.jpg' },
+        { title: 'Album3', description: 'Description3', cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Koko_ni_Ita_Koto_Album_Cover.jpg' },
+        { title: 'Album4', description: 'Description4', cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Koko_ni_Ita_Koto_Album_Cover.jpg' },
+        { title: 'Album5', description: 'Description5', cover: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Koko_ni_Ita_Koto_Album_Cover.jpg' }
       ]
 
       var artistList = [
@@ -55,6 +55,16 @@
       ]
 
       var songList = [
+        { title: 'Song1' },
+        { title: 'Song2' },
+        { title: 'Song3' },
+        { title: 'Song4' },
+        { title: 'Song5' },
+        { title: 'Song1' },
+        { title: 'Song2' },
+        { title: 'Song3' },
+        { title: 'Song4' },
+        { title: 'Song5' },
         { title: 'Song1' },
         { title: 'Song2' },
         { title: 'Song3' },

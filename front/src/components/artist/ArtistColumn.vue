@@ -15,3 +15,10 @@
     props: ['artists']
   }
 </script>
+
+<style scoped>
+  .column {
+    overflow-y: auto;
+    max-height: 585px;
+  }
+</style>
