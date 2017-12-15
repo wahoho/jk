@@ -40,10 +40,24 @@
         videos: youtubeVids
       }
     },
-    computed: {
-      url (id) {
-
+    created () {
+      // this.searchYoutube()
+    },
+    methods: {
+      /*
+      searchYoutube () {
+        var key = 'AIzaSyCAFzN8rqVP_tSlab2cI8eaHtruYCw0fvI'
+        var query = 'akb48'
+        this.$http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&key=' + key)
+          .then(response => {
+            var data = response.data
+            console.log(data)
+          })
+          .catch(e => {
+            console.log(e)
+          })
       }
+      */
     }
   }
 </script>

@@ -2,12 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import VueResource from 'vue-resource'
 import router from './router'
-import 'vue-awesome/icons/flag'
-import 'vue-awesome/icons'
-import Icon from 'vue-awesome/components/Icon'
 
 require('@/assets/sass/main.scss')
+
+Vue.use(VueResource)
 
 Vue.config.productionTip = false
 
@@ -16,5 +16,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App, Icon }
+  components: { App }
 })
