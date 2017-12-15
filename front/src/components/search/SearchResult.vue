@@ -1,20 +1,20 @@
 <template>
   <div>
-    s<nav-bar></nav-bar>
-    <div class="container">
-      <small-search></small-search>
-      <div class="columns" id="results">
-        <album-column :albums="albums"></album-column>
-        <artist-column :artists="artists"></artist-column>
-        <song-column :songs="songs"></song-column>
-      </div>
-    </div>
-    <footer class="footer">
+    <!--
+      <nav-bar></nav-bar>
+    -->
+    <section class="section">
       <div class="container">
-        <div class="content has-text-centered">
-          <song-player></song-player>
+        <small-search></small-search>
+        <div class="columns" id="results">
+          <artist-column :artists="artists"></artist-column>
+          <album-column :albums="albums"></album-column>
+          <song-column :songs="songs"></song-column>
         </div>
       </div>
+    </section>
+    <footer class="footer">
+      <song-player></song-player>
     </footer>
   </div>
 </template>

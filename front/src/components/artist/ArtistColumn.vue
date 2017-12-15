@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="column">
     <div v-for="artist in artists" class="card">
       <div class="card-content">
         <div>

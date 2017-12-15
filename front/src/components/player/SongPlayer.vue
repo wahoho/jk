@@ -1,11 +1,16 @@
 <template>
   <div>
-    <div class="container">
-      <iframe :src="url" width="800" height="300" frameborder="1" allowtransparency="true"></iframe>
-    </div>
-    <div class="container">
-      <video-suggestion></video-suggestion>
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="content has-text-centered">
+          <iframe :src="url" width="800" height="300" frameborder="1" allowtransparency="true"></iframe>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <video-suggestion></video-suggestion>
+      </div>
+    </section>
   </div>
 </template>
 
