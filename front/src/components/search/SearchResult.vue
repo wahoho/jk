@@ -57,7 +57,7 @@
     methods: {
       searchMusic () {
         // const SEARCH_URL = '/v1/spotify/albums?q='
-        const SEARCH_URL = 'http://10.10.14.88:3000/v1/spotify/albums?q='
+        const SEARCH_URL = '/v1/spotify/albums?q='
         var url = SEARCH_URL + this.keyword
         var vm = this
         this.$http.get(url)

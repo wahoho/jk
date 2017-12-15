@@ -22,7 +22,7 @@
     props: ['data'],
     methods: {
       select () {
-        const SONG_URL = 'http://10.10.14.88:3000/v1/spotify/albums/'
+        const SONG_URL = '/v1/spotify/albums/'
         var url = SONG_URL + this.data.id
         var vm = this
 
