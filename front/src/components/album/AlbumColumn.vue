@@ -18,8 +18,7 @@
           </figure>
           <div class="media-content">
             <div class="content">
-              <p><strong>{{ album.title }}</strong></p>
-              <p>{{ album.description }}</p>
+              <p><strong>{{ album.name }}</strong></p>
             </div>
           </div>
         </article>
@@ -30,7 +29,10 @@
 
 <script>
   export default {
-    props: ['albums']
+    props: ['albums'],
+    created () {
+
+    }
   }
 </script>
 
